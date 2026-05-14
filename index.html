@@ -81,13 +81,6 @@
       display: flex;
       gap: 1em;
     }
-    .points_text > h2 {
-      font-size: 2em;
-      color: hsl(5, 85%, 63%);
-    }
-    .points_text > h3:hover {
-      color: hsl(5, 85%, 63%);
-    }
     .links {
       display: flex;
       align-items: end;
@@ -118,6 +111,13 @@
       flex-direction: column;
       display: flex;
     }
+    .points_text > h2 {
+      font-size: 2em;
+      color: hsl(5, 85%, 63%);
+    }
+    .points_text > h3:hover {
+      color: hsl(5, 85%, 63%);
+    }
     .read_more {
       flex-direction: column;
       display: flex;
@@ -128,7 +128,8 @@
     }
     .read_more > button {
       padding: 1.5em;
-      text-transform: full-width uppercase;
+      text-transform: full-width;
+      text-transform:  uppercase;
       background-color: hsl(240, 100%, 5%);
       color: hsl(36, 100%, 99%);
       border: none;
@@ -158,7 +159,7 @@
           <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
           But is it really fulfilling its promise?</p>
       
-          <button>Read more</button>
+          <button type="button">Read more</button>
         </div>
       </div>
     </div>
