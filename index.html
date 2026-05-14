@@ -12,45 +12,205 @@
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      margin: auto;
+      margin-top: 4em;
+
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+    }
+    img[alt="Shapes"] {
+      width: 100%;
+    }
+    .new {
+      background-color: hsl(240, 100%, 5%);
+      color: hsl(236, 13%, 42%);
+      width: 30%;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-size: 1.2em;
+    }
+    .new > div > h2 {
+      color: hsl(233, 8%, 79%);
+    }
+    .new > div > h2:hover {
+      color: hsl(35, 77%, 62%);
+    }
+    .new > div {
+      border-bottom: 2px solid hsl(236, 13%, 42%);
+    }
+    .new > h1 {
+      color: hsl(35, 77%, 62%);
+    }
+    .row_one {
+      flex-direction: row;
+      display: flex;
+      gap: 2em;
+      
+    }
+    .under_pic {
+      flex-direction: row;
+      display: flex;
+    }
+    .under_pic > * {
+      width: 50%;
+    }
+    .under_pic > h1 {
+      font-size: 4em;
+      margin-top: 0;
+    }
+    .under_pic > div > p {
+      width: 80%;
+    }
+    button {
+      width: fit-content;
+      padding: 1em;
+    }
+    .points {
+      flex-direction: row;
+      display: flex;
+      gap: 3em;
+      /* height: 10vw; */
+    }
+    .points > div {
+      flex-direction: row;
+      display: flex;
+      gap: 1em;
+    }
+    .points_text > h2 {
+      font-size: 2em;
+      color: hsl(5, 85%, 63%);
+    }
+    .points_text > h3:hover {
+      color: hsl(5, 85%, 63%);
+    }
+    .links {
+      display: flex;
+      align-items: end;
+      justify-content:space-between;
+      gap: 2em;
+    }
+    .links > a {
+      text-decoration: none;
+      color: hsl(236, 13%, 42%);
+    }
+    .links > a:hover {
+      color: hsl(5, 85%, 63%);
+    }
+    .img {
+      margin-right: auto;
+    }
+    .image_and_under {
+      flex-direction: column;
+      display: flex;
+      width: 60%;
+      gap: 2em;
+    }
+    .points > div > img {
+      width: 60%;
+      height: 100%;
+    }
+    .points_text {
+      flex-direction: column;
+      display: flex;
+    }
+    .read_more {
+      flex-direction: column;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .read_more > p {
+      line-height: 2em;
+    }
+    .read_more > button {
+      padding: 1.5em;
+      text-transform: full-width uppercase;
+      background-color: hsl(240, 100%, 5%);
+      color: hsl(36, 100%, 99%);
+      border: none;
+    }
   </style>
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <div class="links">
+    <img class="img" src="./assets/images/logo.svg" alt="W.">
 
-  The Bright Future of Web 3.0?
+    <a href="#">Home</a>
+    <a href="#">New</a>
+    <a href="#">Popular</a>
+    <a href="#">Trending</a>
+    <a href="#">Categories</a>
+  </div>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+  <div class="row_one">
+    <div class="image_and_under">
+      <img src="./assets/images/image-web-3-desktop.jpg" alt="Shapes">
+      
+      <div class="under_pic">
+        <h1>The Bright Future of Web 3.0?</h1>
+        
+        <div class="read_more">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+      
+          <button>Read more</button>
+        </div>
+      </div>
+    </div>
+    <div class="new">
+      <h1>New</h1>
+      
+      <div>
+        <h2>Hydrogen VS Electric Cars</h2>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      
+      <div>
+        <h2>The Downsides of AI Artistry</h2>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      
+      <div>
+        <h2>Is VC Funding Drying Up?</h2>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+  </div>
 
-  Read more
+  <div class="points">
+    <div>
+      <img src="./assets/images/image-retro-pcs.jpg" alt="retro PCs">
+      <div class="points_text">
+        <h2>01</h2>
+        <h3>Reviving Retro PCs</h3>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
 
-  New 
+    <div>
+      <img src="./assets/images/image-top-laptops.jpg" alt="top laptops">
+      <div class="points_text">
+        <h2>02</h2>
+        <h3>Top 10 Laptops of 2022</h3>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+    <div>
+      <img src="./assets/images/image-gaming-growth.jpg" alt="top laptops">
+      <div class="points_text">
+        <h2>03</h2>
+        <h3>The Growth of Gaming</h3>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+    
+  </div>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
